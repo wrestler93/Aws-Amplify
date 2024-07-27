@@ -1,7 +1,52 @@
 # Aws-Amplify
 
-In the project directory, you can run:
+###Project Summary: Multi-Step Form Application with AWS Amplify
 
+#Overview
+This project is a multi-step form application built using React, Redux Toolkit, and Formik. It is designed to guide users through a series of steps to configure and deploy an application. The steps include selecting a source code provider, adding repository and branch information, setting up build configurations, and reviewing the information before final submission.
+
+#Key Features
+
+#Multi-Step Navigation:
+Users can navigate through different steps of the form, with progress indicated on a sidebar.
+
+#Formik Integration:
+Formik is used for form state management and validation.
+
+#Redux Toolkit:
+Redux Toolkit is utilized to manage the state of the form across different steps.
+
+#Netlify Hosting: 
+The application is deployed on netlify for easy hosting and scalability.
+
+#Components
+
+AppDetails: Collects application name and description.
+RepositoryConfig: Allows users to add repository URL and branch name.
+BuildSettings: Users can input frontend build command and build directory.
+Review: Summarizes all the entered information for final review before submission.
+State Management
+Redux Slice: Manages the state of the form data and the current step.
+
+#Repository Structure
+src/components: Contains all the React components for different steps.
+src/redux: Redux slice for managing state.
+src/App.js: Main application component.
+src/App.css: Styles for the application.
+
+#Conclusion
+This project demonstrates how to build a user-friendly multi-step form application using React, Redux Toolkit, and Formik. It integrates seamlessly with AWS Amplify for deployment, providing a scalable and manageable hosting solution. The application guides users through a structured process, ensuring all necessary information is collected before deployment.
+
+
+Clone the Repository:
+
+### `git clone <repository-url>`
+
+Install Dependencies:
+
+### `npm install`
+
+In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -11,26 +56,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
 ## Learn More
 
